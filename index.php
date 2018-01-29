@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Cahy Squires - PHP Class</title>
-    <link type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+
+
 </head>
 
 <body>
@@ -23,7 +26,7 @@
         </nav>
         <section class="main-content" role="main">
             <div class="img">
-                <img src="img/me.jpg" width="150" height="150" alt="pic of cathy" title="pic of cathy"/>
+                <img src="#" width="150" height="150" alt="pic of cathy" title="pic of cathy"/>
             </div>
             <h2 class="title">Hello!</h2>
             <div class="content">
