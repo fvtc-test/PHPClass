@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Home - PHP Class</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/styles.css">
 
 </head>s
