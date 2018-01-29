@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Cahy Squires - PHP Class</title>
-    <link type="text/css" href="css/mystyles.css" />
-</head>s
+    <link type="text/css" href="css/styles.css">
+</head>
 
 <body>
 <div class="page-wrap">
