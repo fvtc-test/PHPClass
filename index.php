@@ -5,8 +5,6 @@
     <title>Cahy Squires - PHP Class</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
-
-
 </head>
 
 <body>
@@ -21,12 +19,12 @@
                 <li class="menu-item"><a href="/">Home</a></li>
                 <li class="menu-item"><a href="">Loops & Strings</a></li>
                 <li class="menu-item"><a href="#">Countdown</a></li>
-                <li class="menu-item"><a href="#">Magic 8 Ball</a></li>
+
             </ul>
         </nav>
         <section class="main-content" role="main">
             <div class="img">
-                <img src="#" width="150" height="150" alt="pic of cathy" title="pic of cathy"/>
+                <img src="img/me-b-w-150.png" width="150" height="150" alt="pic of cathy" title="pic of cathy"/>
             </div>
             <h2 class="title">Hello!</h2>
             <div class="content">
