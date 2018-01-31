@@ -14,7 +14,7 @@
     </header>
 
     <div class="flex-box">
-        <nav class="main-nav" role="navigation">
+        <nav class="main-nav">
             <ul>
                 <li class="menu-item"><a href="/">Home</a></li>
                 <li class="menu-item"><a href="">Loops & Strings</a></li>
@@ -22,7 +22,7 @@
 
             </ul>
         </nav>
-        <section class="main-content" role="main">
+        <section class="main-content">
             <div class="img">
                 <img src="img/me-b-w-150.png" width="150" height="150" alt="pic of cathy" title="pic of cathy"/>
             </div>
@@ -38,7 +38,7 @@
             </div>
         </section>
 
-        <aside class="main-sidebar" role="complementary">
+        <aside class="right-sidebar">
             Sidebar
         </aside>
     </div>
