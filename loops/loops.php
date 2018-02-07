@@ -110,7 +110,7 @@
 
                     $full_name = strtoupper($full_name);
                     echo $full_name;
-                    $full_name = mb_strtolower($full_name);
+                    $full_name = strtolower($full_name);
                     echo "<br>";
                     echo $full_name;
                     echo  "<br><br><hr><br><br>";
