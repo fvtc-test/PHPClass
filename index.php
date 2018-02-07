@@ -10,17 +10,12 @@
 <body>
 <div class="page-wrap">
     <header class="site-header">
-        <h1>PHP Class - Cathy Squires</h1>
+        <?php include 'includes/header.php'?>
     </header>
 
     <div class="flex-box">
         <nav class="main-nav">
-            <ul>
-                <li class="menu-item"><a href="/">Home</a></li>
-                <li class="menu-item"><a href="">Loops & Strings</a></li>
-                <li class="menu-item"><a href="#">Countdown</a></li>
-
-            </ul>
+            <?php include 'includes/menu.php' ?>
         </nav>
         <section class="main-content">
             <div class="img">
@@ -44,7 +39,7 @@
     </div>
 
     <footer>
-        <div>LearnPHP<sup>&copy;</sup> 2018</div>
+        <?php include 'includes/footer.php'?>
     </footer>
 </div>
 

@@ -1,12 +1,11 @@
 * {
     box-sizing: border-box;
 }
-html { font-size:1rem; margin:0; }
+html { font-size:16px; }
 body {
     font-family: Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     color: #222; line-height:1.8rem;
 }
-
 
 .page-wrap {
     max-width: 1400px;
@@ -98,6 +97,7 @@ body {
     -webkit-order: 2; /* NEW - Chrome */
     order: 2; /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+
 
 .center {text-align:center;}
 
