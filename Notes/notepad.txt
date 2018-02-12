@@ -1,0 +1,3 @@
+CodeIgniter
+
+The Controller (Admin.php) is the thing that ties the Model to the View.

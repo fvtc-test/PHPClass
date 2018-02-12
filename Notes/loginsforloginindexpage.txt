@@ -1,0 +1,11 @@
+runner account
+runner@runner.com
+runner123
+
+Admin Account
+admin@admin.com
+admin123
+
+Promoter Account
+promoter@promoter.com
+promoter123

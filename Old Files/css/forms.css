@@ -1,0 +1,33 @@
+input[type=text],input[type=tel],input[type=password],input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0px 0px 15px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div .form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+label{
+    font-size:14px;
+}
+
+/*validations*/
+input:focus:invalid,
+textarea:focus:invalid{
+    border:solid 1px #F5192F;
+}
+
+input:focus:valid,
+textarea:focus:valid{
+    border:solid 1px #18E109;
+    background-color:#fff;
+}

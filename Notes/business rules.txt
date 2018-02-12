@@ -1,0 +1,29 @@
+promotor - creates the race & sells to make money - add runners to races - runners enter their site to sign up for the race
+
+Runner - participates in the race, can run in multiple races but cannot run in the same race more than once
+
+UserID - could be a promoter & can have multiple races
+
+Admin Account
+admin@admin.com
+admin123
+
+Promoter Account
+promoter@promoter.com
+promoter123
+
+username=Runner Account
+Email = runner@runner.com
+runner123
+
+Promoter adds a Runner a race:
+Does the Promoters key match the Race they are trying to add the runner into?
+
+To add a runner to a race you need the Runner userID (29) & the raceID (4) of the racename & Promoter userID = (27)
+
+To add promoter - Make sure the userKey matches
+Promoters to add a member to a race needs  - userID + RaceID + userKey (for owner of the race)
+
+
+
+
