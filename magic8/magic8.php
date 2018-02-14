@@ -17,22 +17,22 @@
 
 //Did User ask a Question
 
-session_start();
+session_start(); //This allows you to use sessions within your page
 
 if (isset($_POST["txtQuestion"])) {
 
-    $question = $_POST["txtQuestion"];
+    $question = $_POST["txtQuestion"]; //Takes it out of the session variable & puts it in the local variable
 
 } else {
 
-    $question = "";
+    $question = ""; //A blank string is different than a null which is an absence of a string. Kind of weird... but it's a safe way of doing it
 
 }
 
-
+//Session Variable - Gives ability to cache the last question asked. It will persist on the server for the longevity of the session.
 if (isset($_SESSION["PrevQuest"])) {
 
-    $PrevQuest = $_SESSION["PrevQuest"];
+    $PrevQuest = $_SESSION["PrevQuest"]; //Takes it out of the session variable & puts it in the local variable
 
 } else {
 
@@ -93,8 +93,8 @@ if ($question == "") {
 } elseif ($PrevQuest == $question) {
     $answer = "PLEASE ASK A NEW QUESTION!";
 } else {
-    $iResponse = mt_rand(0, 19);
-    $answer = $responses[$iResponse];
+    $iResponse = mt_rand(0, 19); //mt_rand gives a random number with a minimum & maximum number
+    $answer = $responses[$iResponse]; //Change the 4 to iResponse
     $_SESSION["PrevQuest"] = $question; //puts the question to server memory
 }
 
