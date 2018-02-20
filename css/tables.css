@@ -1,7 +1,9 @@
 /* some basic table styles */
 
 table {
-    max-width: 100%;
+    width:100%;
+    border-collapse: collapse;
+    color:rebeccapurple;
     overflow-x:scroll;
 }
 
@@ -13,13 +15,7 @@ th, td {
     padding: 2px;
 }
 
-/* some basic table styles */
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    color:rebeccapurple;
-}
 tbody tr:hover {
     background-color: #f4f4f4;
 }
