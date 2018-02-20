@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Movie List</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/tables.css"/>
 
 </head>
 
@@ -21,6 +22,24 @@
 
             <h2 class="title">Movie List</h2>
             <div class="content">
+                <table>
+                    <thead>
+                  <tr>
+                    <th>Key</th>
+                    <th>Movie Title</th>
+                    <th>Movie Rating</th>
+                   </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Star Wars: The Last Jedi</td>
+                        <td>PG</td>
+                    </tr>
+
+                    </tbody>
+                </table>
                 <p>
                     <?php
 
@@ -37,7 +56,7 @@
                         //get a record
                         $row = $sql->fetch();
                         //print one field
-                        echo $row["movieTitle"]; // b sure these are brackets
+                        echo $row["movieRating"]; // b sure these are brackets
 
                     // this code will catch if they used the wrong password
                     }catch (PDOException $e){
