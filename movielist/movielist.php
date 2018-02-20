@@ -22,7 +22,47 @@
             <h2 class="title">Movie List</h2>
             <div class="content">
                 <p>
-                    Put content here
+                    <?php
+                    /* FIRST:
+                     * Add this code to an includes/config.php
+                     *
+                     */
+                    // Test database
+                    //put in your IP address for host
+                    $dsn = 'mysql:host=10.4.162.129;dbname=phpclass';
+                    $username = 'dbuser';
+                    $password = 'dbdev123';
+                    $options = array(
+                        // google  mysql pdo throw exception - copy this from the page
+                        //if there were options we could comma separate it
+                       PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+                     );
+                    /*
+                       *
+                       * END FIRST CODE HERE
+                       */
+
+                    //change dbh to db
+                    try{
+                        $db = new PDO($dsn, $username, $password, $options);
+                    // this code will catch if they used the wrong password
+                        //sql statement preparing what needs to be executed
+                        $sql = $db->prepare("select * from movielist");
+                        //execute
+                        $sql->execute();
+                        //get a record
+                        $row = $sql->fetch();
+                        //print one field
+                        echo $row["movieTitle"]; // b sure these are brackets
+
+                    }catch (PDOException $e){
+                        $error = $e ->getMessage();
+                        echo "Error: $error";
+                    }
+
+
+
+                    ?>
                 </p>
 
 
