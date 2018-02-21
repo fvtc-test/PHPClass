@@ -30,17 +30,8 @@
                     <th>Movie Rating</th>
                    </tr>
                     </thead>
-
                     <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Star Wars: The Last Jedi</td>
-                        <td>PG</td>
-                    </tr>
 
-                    </tbody>
-                </table>
-                <p>
                     <?php
 
                     include '../includes/dbConn.php';
@@ -54,23 +45,28 @@
                         //execute
                         $sql->execute();
                         //get a record
-                        $row = $sql->fetch();
+                        $row = $sql->fetch(); //fetch the first row
                         //print one field
-                        echo $row["movieRating"]; // b sure these are brackets
+                        while($row != null){ //evaluate if the row is null
+                            //HTML in PHP needs to be echoed
+
+                           echo "<tr>";
+                           echo  "<td>" . $row["movieID"] . "</td>";
+                           echo  "<td>" . $row["movieTitle"] . "</td>";
+                           echo "<td>" . $row["movieRating"] . "</td>";
+                           echo "</tr>";
+
+                           $row = $sql->fetch(); //fetch the next row, then go up & evaluate if it's null
+                        }
 
                     // this code will catch if they used the wrong password
-                    }catch (PDOException $e){
-                        $error = $e ->getMessage();
+                    }catch (PDOException $e) {
+                        $error = $e->getMessage();
                         echo "Error: $error";
                     }
-
-
-
                     ?>
-                </p>
-
-
-
+                    </tbody>
+                </table>
             </div>
         </section>
 
